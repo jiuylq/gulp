@@ -7,7 +7,7 @@
 > 本脚本家集成es6转es5的功能，sass/less预处理器编译功能，自动添加兼容前缀autoprefixer，开启本地服务器同步刷新网页等功能
 
 
-gulp 脚本架共引入了一下功能：
+gulp 脚本架共引入了以下功能：
 
 * del // del
 * gulp-babel // ES6转ES5
