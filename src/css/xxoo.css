@@ -1,0 +1,269 @@
+body {
+}
+.mui-content {
+  /*background:#fff;*/
+  /*display: none;*/
+}
+#installment {
+  display: none;
+  /*background: #fff;*/
+}
+.installment_bg {
+  background: #fff;
+}
+.installment_title h2 {
+  padding: 20px 15px 5px;
+  text-align: center;
+  font-size: 23px;
+  color: #000;
+}
+.installment_title p {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #000;
+}
+.installment_list {
+  margin: 0 15px;
+  padding: 0 0 10px;
+}
+.installment_item {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  /*justify-content:space-between;*/
+  border-left: 1px solid #efefef;
+  border-right: 1px solid #efefef;
+}
+.installment_item:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #efefef;
+}
+.installment_item:first-child:before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  left: 0;
+  top: 0;
+  right: 0;
+  background: #efefef;
+}
+/*.installment_left{
+				width:150px;
+			}*/
+.installment_item span {
+  flex: 1;
+  /* text-align: center; */
+  /*border: 1px solid red;*/
+}
+.btn_item {
+  margin: 0 15px;
+  text-align: center;
+}
+.btn_all {
+  margin-top: 10px;
+}
+.mui-btn-primary {
+  width: 100%;
+  padding: 10px 12px;
+  background: #ffa800;
+  border: 1px solid #ffa800;
+}
+.btn_wrap {
+  margin-top: 10px;
+  padding: 10px 0;
+  background: #fff;
+}
+
+#payment_wrap {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 350px;
+  bottom: -100%;
+  background: #fff;
+  z-index: 1000;
+  overflow: hidden;
+}
+#payment_wrap .mui-spinner {
+  position: absolute;
+  top: 35%;
+  left: 48%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.payment_title {
+  position: relative;
+  padding: 10px 0;
+}
+.payment_title .mui-icon {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-left: 10px;
+  z-index: 99;
+}
+.payment_title .mui-icon-closeempty {
+  font-size: 30px;
+}
+.payment_title .mui-icon-arrowleft {
+  font-size: 22px;
+}
+.payment_title .payment_title_text {
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  top: 15px;
+  text-align: center;
+  z-index: 95;
+}
+.payment_content {
+  position: relative;
+  margin: 0;
+  padding: 0 10px 10px;
+}
+#wxtips {
+  display: none;
+  padding: 0 15px 10px;
+  font-size: 13px;
+  color: #ff0000;
+}
+#wxtips p {
+  color: #ff0000;
+  font-size: 13px;
+}
+
+#notmsg {
+  display: none;
+  margin-top: 10px;
+  padding: 30px 15px;
+  text-align: center;
+  /*background: #fff;*/
+}
+
+.payment_item {
+  position: relative;
+  display: flex;
+  padding: 10px 5px;
+  justify-content: space-between;
+  font-size: 15px;
+}
+.payment_title:after,
+.payment_content:after,
+.payment_item:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #efefef;
+}
+.payment_item:last-child:after {
+  height: 0;
+}
+.payment_item_right {
+  margin-right: 15px;
+}
+.payment_item_right:after {
+  right: 0;
+  color: #31d3f9;
+}
+.payment_item:last-child {
+  margin-bottom: 25px;
+}
+.payment_btn {
+  margin: 0 15px;
+  padding: 10px 0;
+}
+.mui-radio input[type="radio"]:checked:before {
+  content: "\e442";
+}
+.mui-checkbox input[type="checkbox"]:checked:before,
+.mui-radio input[type="radio"]:checked:before {
+  color: #31d3f9;
+}
+
+.payment_select label {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+.payment_select .mui-checkbox input[type="checkbox"],
+.mui-radio input[type="radio"] {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.payment_select .mui-table-view-cell {
+  padding: 8px 15px;
+}
+.mui-table-view .mui-media-object {
+  line-height: 35px;
+  max-width: 35px;
+  height: 35px;
+}
+.payment_select label img {
+  line-height: 35px;
+  max-width: 35px;
+  height: 35px;
+}
+.mui_qb {
+  border-radius: 10px;
+  padding: 5px;
+  background: #ffa500;
+}
+.select_title p {
+  color: #000;
+  font-size: 18px;
+}
+.mui-table-view:before,
+.mui-table-view:after,
+.mui-table-view-cell:after {
+  background-color: #efefef;
+}
+
+#payment_pay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #fff;
+}
+
+#payment_way {
+  position: absolute;
+  left: 120%;
+  right: -120%;
+  background: #fff;
+}
+
+#payment_wrap.payment_show {
+  bottom: 0;
+}
+.select_active #payment_pay {
+  left: -120%;
+  right: 120%;
+}
+.select_active #payment_way {
+  left: 0;
+  right: 0;
+}
+#payment_wrap,
+#payment_pay,
+#payment_way {
+  /*-webkit-transition: 1s ease;
+				transition: 1s ease;*/
+  -webkit-transition-duration: 400ms;
+  transition-duration: 400ms;
+}
+.bodyhide {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}

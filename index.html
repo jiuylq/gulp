@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- build:css css/css.css -->
+    <link rel="stylesheet" href="./css/css.scss">
+    <!-- endbuild -->
+    <!-- build:css css/scss.css -->
+    <link rel="stylesheet" href="./css/scss.scss">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/index.js -->
+    <script src="./js/index.js"></script>
+     <!-- endbuild -->
+    <!-- build:js scripts/js.js -->
+    <script src="./js/js.js"></script>
+    <!-- endbuild -->
+
+    <style>
+        .ui-cover-tip{
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border: solid 1px red;
+        }
+        .ui-cover-tip:before{
+        content:'';
+        position: absolute;
+        display:block;
+        width: 0;
+        height: 0;
+        border-top: 45px solid #37c2a6;
+        border-right: 45px solid transparent;
+        z-index: 99;
+        }
+        .ui-cover-tip:after{
+        content:'封面';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        transform: rotate(-45deg);
+        color:#fff;
+        z-index: 100;
+        }
+    </style>
+</head>
+<body>
+    <div class="ui-cover-tip">xxxxxx </div>
+    <div>1212</div>
+    <form action=""></form>
+</body>
+</html>
